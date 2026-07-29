@@ -1,0 +1,178 @@
+:root {
+  --bg: #08090c;
+  --panel: #0e1016;
+  --edge: #1c2029;
+  --ink: #e8eaef;
+  --muted: #8b93a3;
+  --accent: #fbbf24;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.shell {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--edge);
+}
+
+.brand {
+  font-weight: 660;
+  letter-spacing: -0.01em;
+  font-size: 1.0625rem;
+}
+
+.brand span {
+  color: var(--accent);
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.hero {
+  padding: 3.5rem 0 2.5rem;
+  max-width: 40rem;
+}
+
+h1 {
+  font-size: clamp(1.875rem, 5vw, 2.75rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 0 1rem;
+  font-weight: 660;
+}
+
+.lede {
+  font-size: 1.0625rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.source {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  padding: 0.75rem 1rem;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  flex: none;
+}
+
+.dot-live {
+  background: #4ade80;
+}
+
+.dot-snapshot {
+  background: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1rem;
+}
+
+.item {
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item-sku {
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.item h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+  flex: 1;
+}
+
+.item-foot {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--edge);
+}
+
+.price {
+  font-weight: 620;
+  font-variant-numeric: tabular-nums;
+}
+
+.stock {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.stock-out {
+  color: #f87171;
+}
+
+.stock-low {
+  color: var(--accent);
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--edge);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
