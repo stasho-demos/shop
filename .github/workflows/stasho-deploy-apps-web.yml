@@ -1,4 +1,4 @@
-name: Aleph Cloud Deploy
+name: Stasho Deploy
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
       - apps/web/**
       - package-lock.json
       - package.json
-      - .github/workflows/aleph-deploy-apps-web.yml
+      - .github/workflows/stasho-deploy-apps-web.yml
   workflow_dispatch:
     inputs:
       commit:
