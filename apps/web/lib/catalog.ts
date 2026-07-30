@@ -65,6 +65,13 @@ const snapshot: Product[] = [
     priceGbp: 31.0,
     stock: 14,
   },
+  {
+    sku: "FW-071",
+    name: "Waxed cotton apron",
+    blurb: "Full-length, one pocket for the awl. Wipes clean of PVA.",
+    priceGbp: 26.5,
+    stock: 19,
+  },
 ];
 
 function isProduct(value: unknown): value is Product {

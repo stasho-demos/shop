@@ -63,7 +63,8 @@ export default async function Storefront() {
 
       <footer>
         Foldwork Supply. The storefront and the catalog service are two
-        workspaces in one repository, deployed separately.
+        workspaces in one repository, deployed separately. Restocked this
+        week: a waxed cotton apron (FW-071).
       </footer>
     </main>
   );
